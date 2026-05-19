@@ -36,7 +36,9 @@
         <option value="Personal">Personal</option>
       </select>
 
-      <input type="date" id="dateInput" />
+      <input id="dateInput" placeholder="Due date"
+      onfocus="this.type='date'"
+      onblur="if(!this.value) this.type='text'" />
 
       <button type="submit" id="submitBtn">Add Task</button>
     </form>

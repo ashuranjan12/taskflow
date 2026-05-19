@@ -104,6 +104,14 @@ input[type="date"] {
   color-scheme: dark;
 }
 
+#dateInput::placeholder{
+   color: #ffffff;
+}
+
+body.light #dateInput::placeholder{
+   color: black;
+}
+
 body.light input[type="date"] {
   color: #1e293b;
   color-scheme: light;
