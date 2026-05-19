@@ -99,6 +99,16 @@ select {
   transition: 0.25s ease;
 }
 
+input[type="date"] {
+  color: #e5e7eb;
+  color-scheme: dark;
+}
+
+body.light input[type="date"] {
+  color: #1e293b;
+  color-scheme: light;
+}
+
 input::placeholder {
   color: #94a3b8;
 }
@@ -402,6 +412,12 @@ body.light .top-header h1{
 @media (max-width: 768px) {
   body {
     padding: 24px 12px;
+  }
+
+  input[type="date"] {
+  min-height: 64px;
+  appearance: none;
+  -webkit-appearance: none;
   }
 
   .container {
